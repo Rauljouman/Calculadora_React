@@ -1,0 +1,54 @@
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; 
+    padding: 15px;
+    background-color: black;
+}
+
+.keypad button {
+    border-radius: 5px;
+    background-color: bisque;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.keypad button:hover {
+    background-color: #d0d0d0;
+}
+
+/* Pantallas grandes (PC) */
+@media (min-width: 1024px) {
+    .keypad {
+      gap: 15px; /* Espacio más grande entre botones en pantallas grandes */
+    }
+  
+    .keypad button {
+      padding: 20px; /* Botones más grandes */
+      font-size: 1.5em; /* Texto de botón más grande */
+    }
+  }
+  
+  /* Tablets */
+  @media (min-width: 600px) and (max-width: 1024px) {
+    .keypad {
+      gap: 12px; /* Espacio más grande entre los botones */
+    }
+  
+    .keypad button {
+      padding: 18px; /* Botones ajustados para tablets */
+      font-size: 1.3em; /* Texto de botón más grande */
+    }
+  }
+  
+  /* Móviles */
+  @media (max-width: 600px) {
+    .keypad {
+      gap: 8px; /* Espacio más pequeño entre los botones */
+    }
+  
+    .keypad button {
+      padding: 12px; /* Botones más pequeños en móvil */
+      font-size: 1.1em; /* Texto de botón más pequeño */
+    }
+  }

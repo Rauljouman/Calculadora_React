@@ -1,0 +1,29 @@
+.display {
+    text-align: right;
+    font-size: 2em;
+    padding:10px;
+    border-bottom: 2px solid #ccc;
+}
+
+@media (min-width: 1024px) {
+    .display {
+      font-size: 2.5em; /* Tamaño más grande para PC */
+      padding: 20px; /* Más espacio interno */
+    }
+  }
+  
+  /* Tablets */
+  @media (min-width: 600px) and (max-width: 1024px) {
+    .display {
+      font-size: 2.2em; /* Ajuste del tamaño de fuente del display */
+      padding: 15px; /* Espacio interno ligeramente mayor */
+    }
+  }
+  
+  /* Móviles */
+  @media (max-width: 600px) {
+    .display {
+      font-size: 1.8em; /* Tamaño reducido para móviles */
+      padding: 10px; /* Menos espacio interno */
+    }
+  }

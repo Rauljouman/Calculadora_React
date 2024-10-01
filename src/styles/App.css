@@ -1,0 +1,31 @@
+.calculator {
+  width: 300px;
+  margin: 50px auto; /* Centra la calculadora */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pantallas grandes (PC) */
+@media (min-width: 1024px) {
+  .calculator {
+    width: 400px; /* Calculadora más ancha en pantallas grandes */
+  }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .calculator {
+    width: 90%; /* La calculadora ocupa el 90% del ancho de la pantalla */
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  .calculator {
+    width: 100%; /* La calculadora ocupa todo el ancho del móvil */
+    margin: 20px auto; /* Menor margen vertical */
+  }
+}
